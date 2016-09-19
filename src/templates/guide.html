@@ -1,0 +1,29 @@
+<h1><%= guide.title %></h1>
+<% if(guide.designer) { %>
+  <% if (Array.isArray(guide.designer)) { %>
+    <h2>Steps</h2>
+    <% guide.designer.forEach(function(item, i) { %>
+    <h3>Step <%= i + 1 %> - <%= item.step %></h3>
+    <% }) %>
+  <% } %>
+  <h2>Designer Guide</h2>
+  <% if (Array.isArray(guide.designer)) { %>
+    <% guide.designer.forEach(function(item, i) { %>
+    <h2 class="step-title"><%- md(item.step) %></h2>
+    <%- md(item.content) %>
+    <% }) %>
+  <% } else { %>
+    <%- md(guide.designer) %>
+  <% } %>
+<% } %>
+<% if(guide.cli) { %>
+  <h2>CLI Guide</h2>
+  <% if (Array.isArray(guide.cli)) { %>
+    <% guide.cli.forEach(function(item, i) { %>
+    <h2 class="step-title"><%- md(item.step) %></h2>
+    <%- md(item.content) %>
+    <% }) %>
+  <% } else { %>
+    <%- md(guide.cli) %>
+  <% } %>
+<% } %>

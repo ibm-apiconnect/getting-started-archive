@@ -5,7 +5,15 @@ description: |
 guides:
   - title: Creating a Hello World Micro Service
     designer:
-      $ref: './designer/creating.md'
+      - step: Creating the LoopBack Application
+        content:
+          $ref: './designer/hello-world/project.md'
+      - step: Creating a `Model`
+        content:
+          $ref: './designer/hello-world/model.md'
+      - step: Creating a `DataSource`
+        content:
+          $ref: './designer/hello-world/datasource.md'
     cli:
       $ref: './cli/creating.md'
   - title: Orchestrating SOAP services with LoopBack

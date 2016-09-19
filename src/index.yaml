@@ -5,3 +5,10 @@ sections:
       $ref: './api-proxy/index.yaml'
   - index:
       $ref: './catalog/index.yaml'
+templates:
+  home:
+    src:
+      $ref: './templates/home.html'
+  guide:
+    src:
+      $ref: './templates/guide.html'
