@@ -1,0 +1,21 @@
+title: Building Micro Services
+description: |
+Learn the basics for creating Micro Services
+using the LoopBack framework.
+
+guides:
+  - title: Creating a Hello World Micro Service
+    designer:
+      $ref: './designer/creating.md'
+    cli:
+      $ref: './cli/creating.md'
+  - title: Orchestrating SOAP services with LoopBack
+    designer:
+      $ref: './designer/soap.md'
+    cli:
+      $ref: './cli/soap.md'
+  - title: Deploying LoopBack Applications to Bluemix
+    designer:
+      $ref: './designer/deploying.md'
+    cli:
+      $ref: './cli/soap.md'

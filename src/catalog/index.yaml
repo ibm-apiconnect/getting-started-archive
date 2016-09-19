@@ -1,0 +1,20 @@
+title: Organizing APIs
+description: |
+A walk through of the basics for using the
+API Manager's catalog to organize your Products, APIs
+and other related meta-data.
+
+guides:
+  - title: Version controlling your API Connect Project
+    cli:
+      $ref: './cli/version-control.md'
+  - title: Creating your first Product and API Definition
+    designer:
+      $ref: './designer/soap.md'
+    cli:
+      $ref: './cli/soap.md'
+  - title: Publishing a Product to a Catalog on Bluemix
+    designer:
+      $ref: './designer/publishing.md'
+    cli:
+      $ref: './cli/publishing.md'

@@ -1,0 +1,7 @@
+sections:
+  - index:
+      $ref: './micro-services/index.yaml'
+  - index:
+      $ref: './api-proxy/index.yaml'
+  - index:
+      $ref: './catalog/index.yaml'
