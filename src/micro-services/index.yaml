@@ -1,8 +1,7 @@
 title: Building Micro Services
 description: |
-Learn the basics for creating Micro Services
-using the LoopBack framework.
-
+  Learn the basics for creating Micro Services
+  using the LoopBack framework.
 guides:
   - title: Creating a Hello World Micro Service
     designer:
