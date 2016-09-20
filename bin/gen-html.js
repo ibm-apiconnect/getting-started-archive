@@ -60,7 +60,6 @@ function renderHtml(data) {
   });
 }
 
-
 function href(doc) {
   var href = doc.title.toLowerCase();
   href = href.replace(/\s/g, '-');
