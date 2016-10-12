@@ -69,6 +69,8 @@ TBD
    - Show the generated Swagger.
 
 ### Deploying LoopBack Applications to Bluemix
+
+Link to existing docs.
   
 ## Organizing APIs
 
