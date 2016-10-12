@@ -8,7 +8,7 @@
 
 NOTE: _Must use DataPower GW_
 
-Exposing SOAP services as REST APIs
+### Exposing SOAP services as REST APIs
 
 1. Create API defn.
 1. Create target service
@@ -27,7 +27,7 @@ Exposing SOAP services as REST APIs
      - SOAP OpID (TBD)
    - Add response map (zip -> zip, weatherCity -> city, XML -> json)
 
-Invoking a Micro Service from an API Proxy
+### Invoking a Micro Service from an API Proxy
 
 1. Create API
    - Define Swagger definition 
@@ -49,7 +49,7 @@ Deploying Assemblies to Bluemix
   
 ## Building Micro Services
 
-Creating a Hello World Micro Service
+### Creating a Hello World Micro Service
 
 1. Create memory data source
 1. Create a model and properties
@@ -57,7 +57,7 @@ Creating a Hello World Micro Service
 1. Test with Explorer
    - Show the generated Swagger
 
-Orchestrating SOAP services with LoopBack (nb. see existing blog)
+### Orchestrating SOAP services with LoopBack (nb. see existing blog)
 
 1. Create LoopBack app.
 1. Create datasource and choose SOAP connector
@@ -66,13 +66,15 @@ Orchestrating SOAP services with LoopBack (nb. see existing blog)
 1. Test using the Explorer.
    - Show the generated Swagger.
 
-Deploying LoopBack Applications to Bluemix
+### Deploying LoopBack Applications to Bluemix
   
 ## Organizing APIs
 
-- Version controlling your API Connect Project
-- Creating your first Product and API Definition
-- Publishing a Product to a Catalog on Bluemix
+### Version controlling your API Connect Project
+
+### Creating your first Product and API Definition
+
+### Publishing a Product to a Catalog on Bluemix
   
 ## Glossary
 
