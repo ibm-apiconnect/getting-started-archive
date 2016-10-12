@@ -2,11 +2,29 @@
 
 **Learn the basics of API Connect by using these guides to build micro services and api proxies.**
 
+NOTE: _Must use DataPower GW_
+
 ## Building an API Proxy
 
-- Creating your first Assembly
+### Creating your first Assembly
 
-NOTE: _Must use DataPower GW_
+1. Create API
+   - Define Swagger definition 
+   - Define operation
+   - What this does: Creates Product, creates client ID policy, creates invoke policy
+1. Wire up proxy
+   - Edit host and path API properties.
+   - Path
+   - Parameters
+   - Response defn.
+1. Run using test tool
+   - Select product
+   - Select catalog and test app
+   - Select operationand params
+   - Expand debug pane
+1. `curl` the new endpoint.  
+
+Deploying Assemblies to Bluemix
 
 ### Exposing SOAP services as REST APIs
 
@@ -29,24 +47,8 @@ NOTE: _Must use DataPower GW_
 
 ### Invoking a Micro Service from an API Proxy
 
-1. Create API
-   - Define Swagger definition 
-   - Define operation
-   - What this does: Creates Product, creates client ID policy, creates invoke policy
-1. Wire up proxy
-   - Edit host and path API properties.
-   - Path
-   - Parameters
-   - Response defn.
-1. Run using test tool
-   - Select product
-   - Select catalog and test app
-   - Select operationand params
-   - Expand debug pane
-1. `curl` the new endpoint.
-  
-Deploying Assemblies to Bluemix
-  
+TBD
+
 ## Building Micro Services
 
 ### Creating a Hello World Micro Service
