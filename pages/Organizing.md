@@ -1,15 +1,13 @@
 ---
-title: Organizing APIs
-toc: false
+title: Organizing and publishing your APIs
+layout: tutorial
 keywords:
-tags:
-sidebar: gs_sidebar
-permalink: /organizing.html
+permalink: /Organizing.html
 summary:
 ---
-### Version controlling your API Connect Project
 
-### Creating your first Product and API Definition
+This tutorial has three parts:
 
-### Publishing a Product to a Catalog on Bluemix
-  
+- [Versioning your API Connect Project](Versioning.html)
+- [Creating your first Product and API Definition](First-product.html)
+- [Publishing a Product to a Catalog on Bluemix](Publish-product.html)

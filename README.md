@@ -1,97 +1,59 @@
-# Getting Started on API Connect
+# API Connect Getting Started mini-site
 
-**Learn the basics of API Connect by using these guides to build micro services and api proxies.**
+This site is based on the Jekyll theme for [loopback.io](http://loopback.io).
+For more information, see [Contributing to LoopBack docs](http://loopback.io/doc/en/contrib/doc-contrib.html).
 
-NOTE: _Must use DataPower GW_
+NOTE: The website is served from the `gh-pages` branch.
 
-## Building an API Proxy
+## Previewing the site locally
 
-### Creating your first Assembly
+### Setup
 
-1. Create API
-   - Define Swagger definition 
-   - Define operation
-   - What this does: Creates Product, creates client ID policy, creates invoke policy
-1. Wire up proxy
-   - Edit host and path API properties.
-   - Path
-   - Parameters
-   - Response defn.
-1. Run using test tool
-   - Select product
-   - Select catalog and test app
-   - Select operationand params
-   - Expand debug pane
-1. `curl` the new endpoint.  
+Set up Jekyll on your machine:
 
-Deploying Assemblies to Bluemix
+1. Install [Ruby and Bundler](https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/) if you don't have them already.
 
-### Exposing SOAP services as REST APIs
+1. `cd` to the repository directory and run the following command:
 
-1. Create API defn.
-1. Create target service
-   - Provide URL of WSDL file
-1. Create in the Swagger API defn.
-1. Create operation switch
-   - Add case for getForecastByZip (operation defined in swagger)
-1. Add map for request
-   - Select payload defn. left side, right side
-   - zip, weatherCit, Country
-1. Add invoke policy 
-   - http://weather.api.yahoo.com
-   - Set method to POST
-   - Add set-variable
-     - Header
-     - SOAP OpID (TBD)
-   - Add response map (zip -> zip, weatherCity -> city, XML -> json)
+```
+$ cd getting-started
+$ bundle install
+```
 
-### Invoking a Micro Service from an API Proxy
+Bundler will look in the Gemfile for which gems to install. The `github-pages` gem includes the same version of Jekyll and other dependencies as used by GitHub Pages, so that your local setup mirrors GitHub Pages as closely as possible.
 
-TBD
+## Run and view site locally
 
-## Building Micro Services
+Run Jekyll using the following command:
 
-### Creating a Hello World Micro Service
+```
+$ bundle exec jekyll serve
+```
 
-1. Create memory data source
-1. Create a model and properties
-1. Choose memory data source
-1. Test with Explorer
-   - Show the generated Swagger
+Then, load [http://localhost:4001/](http://localhost:4001/) on your browser.
 
-### Orchestrating SOAP services with LoopBack (nb. see existing blog)
+## Includes
 
-1. Create LoopBack app.
-1. Create datasource and choose SOAP connector
-1. Choose models to create (not yet in UI, CLI only)
-1. Choose methods to create (not yet in UI, CLI only)
-1. Test using the Explorer.
-   - Show the generated Swagger.
+The site uses several special templates:
 
-### Deploying LoopBack Applications to Bluemix
+### item
 
-Link to existing docs.
-  
-## Organizing APIs
+Use the `item.md` include to render a markdown string from a YAML file.  It requires one parameter, a YAML property name whose value is the markdown content to display.  
+For example, the following displays the content of `create_project.project_pane_open`
+in the `microservice.yml` file:
 
-### Version controlling your API Connect Project
+```
+{% assign content = site.data.microservice.create_project %}
+...
+{% include item.md text=content.project_pane_open %}
+```
 
-### Creating your first Product and API Definition
+### section-head
 
-### Publishing a Product to a Catalog on Bluemix
-  
-## Glossary
+Use the `section-head.md` include to display the heading and summary for a section in a YAML file.  It does not accept any parameters, but assumes the `{{content}}` variable has been set to the appropriate YAML property.  For example:
 
-  - `apic` CLI
-  - API Definition
-  - API Designer
-  - API Proxy
-  - Assembly
-  - Gateway
-  - Micro Service
-  - Open API
-  - LoopBack
-  - Product
-  - Project
-  - Swagger
-  - YAML
+```
+{% assign content = site.data.microservice.create_project %}
+...
+{% include section-head.md %}
+```

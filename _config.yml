@@ -1,3 +1,4 @@
+exclude: [README.md]
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
@@ -8,10 +9,10 @@ topnav_title: IBM API Connect
 site_title: IBM API Connect
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-company_name: IBM / StrongLoop
+company_name: IBM 
 # this appears in the footer
 
-github_editme_path:
+github_editme_path: ibm-apiconnect/getting-started/blob/gh-pages/pages
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 google_analytics:
@@ -54,6 +55,9 @@ kramdown:
  syntax_highlighter: rouge
 # filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
 
+gems:
+  - jekyll-redirect-from
+
 collections:
   tooltips:
     output: false
@@ -68,7 +72,7 @@ defaults:
       layout: "page"
       comments: true
       search: true
-      sidebar: lb2_sidebar
+      sidebar: 
   -
     scope:
       path: ""
@@ -86,15 +90,15 @@ defaults:
       layout: "post"
       comments: true
       search: true
-      sidebar: home_sidebar
+      sidebar: 
 
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
-- gs_sidebar
+- 
 
 description: "Getting started with IBM API Connect"
 # the description is used in the feed.xml file
 
-# needed for sitemap.xml file only
-url: https://developer.ibm.com/apiconnect/
+# url: ibm-apiconnect.github.io
+# baseurl: /getting-started

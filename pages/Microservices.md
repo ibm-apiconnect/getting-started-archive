@@ -1,30 +1,13 @@
 ---
-title: Building microservices
-toc: false
-keywords:
-tags:
-sidebar: gs_sidebar
-permalink: /microservices.html
-summary:
+title: Creating microservices
+keywords: microservices
+layout: tutorial
+permalink: /Microservices.html
+summary: A microservice is a flexible, fine-grained, independently-deployable application with a REST API that communicates with other microservices via HTTP.
 ---
-### Creating a Hello World Micro Service
 
-1. Create memory data source
-1. Create a model and properties
-1. Choose memory data source
-1. Test with Explorer
-   - Show the generated Swagger
+This tutorial has three parts:
 
-### Orchestrating SOAP services with LoopBack (nb. see existing blog)
-
-1. Create LoopBack app.
-1. Create datasource and choose SOAP connector
-1. Choose models to create (not yet in UI, CLI only)
-1. Choose methods to create (not yet in UI, CLI only)
-1. Test using the Explorer.
-   - Show the generated Swagger.
-
-### Deploying LoopBack Applications to Bluemix
-
-Link to existing docs.
-  
+- [Creating your first microservice](microservice-1.html)
+- [Orchestrating SOAP services with LoopBack](orchestrating-1.html) (TBD)
+- [Publishing your API to Bluemix](publishing-1.html) (TBD)

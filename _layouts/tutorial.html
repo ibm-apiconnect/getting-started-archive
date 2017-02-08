@@ -1,0 +1,57 @@
+---
+layout: default
+css: tutorial
+---
+<div class="row">
+{% if page.sidebar %}
+  {% include sidebar.html %}
+{% endif %}
+  <div class="col-md-8">
+
+    <p id="heading1">{{page.title}}</p>
+{% if page.summary %}
+    <p id="summary">Summary</p>
+    <p id="summarydesc">{{page.summary}}</p>
+{% endif %}
+    <div id="square">
+      {{content}}
+    </div>
+
+{% if page.next %}
+
+    {% assign match = false %}
+    {% for item in nav.children %}
+        {% if match %}
+            {% assign next-page = item.page %}
+            {% assign next-text = item.text %}
+            {% assign match = false %}
+        {% endif %}
+        {% if page.permalink contains item.page %}
+            {% assign match = true %}
+        {% endif %}
+    {% endfor %}
+
+    <div class="nextstep">
+      <p id="next">Next Step: </p>
+      <a href="{{next-page}}.html" id="navigate">{{next-text}}</a>
+    </div>
+{% endif %}
+<p>
+
+
+
+</p>
+    <div class="proposechangediv">
+      <div class="githubdiv">
+        <img src="images/mark-github.png" id="git"/>
+        <p id="iffixing">See something that needs fixing?</p>
+      </div>
+      <br/>
+      <div class="changesourcediv">
+        <p id="propose">Propose a change on the</p>&nbsp;<a href="#">source</a>.
+      </div>
+    </div>
+
+  </div>
+
+</div>

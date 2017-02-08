@@ -1,0 +1,263 @@
+.back {
+  float: left;
+  margin-right: 8px;
+}
+
+.gs {
+  font-weight: bold;
+  font-size: 14px;
+  color: #3D70B2;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+#gettingstarted {
+  display: inline-flex;
+}
+
+.tutorialtitle {
+  font-weight: 100;
+  margin-top: 7px;
+  font-size: 32px;
+  color: #5A6872;
+  letter-spacing: 0.27px;
+  line-height: 40px;
+  margin-left: 20px;
+  align:left;
+}
+
+.row {
+  margin: 50px 32px 0;
+}
+
+#intro {
+  font-weight: 100;
+  font-size: 40px;
+  color: #2D3F49;
+  letter-spacing: 1.2px;
+  line-height: 54px;
+}
+
+#heading1 {
+  font-weight: 100;
+  font-size: 40px;
+  color: #2D3F49;
+  letter-spacing: 1.2px;
+  line-height: 54px;
+}
+
+#summary {
+  font-weight: 200;
+  font-size: 22px;
+  color: #152935;
+  line-height: 24px;
+  margin-top:40px;
+}
+
+#summarydesc {
+  font-size: 16px;
+  color: #152935;
+  line-height: 24px;
+}
+
+#project {
+  font-weight: 100;
+  font-size: 26px;
+  color: #152935;
+  line-height: 32px;
+  margin-top:40px
+}
+
+#projectdesc {
+  font-size: 16px;
+  color: #152935;
+  line-height: 24px;
+  margin-top:12px;
+  min-height: 48px;
+}
+
+.table {
+  padding-left: 0px;
+}
+
+span.line {
+  position : absolute;
+  border : solid #8C9BA5;
+  border-width: 1px;
+  min-height: 195px;
+  opacity: 0.14;
+  margin-left: 13px;
+  margin-top: 13px;
+}
+
+#tabletitle {
+  font-weight: 200;
+  font-size: 18px;
+  color: #152935;
+  line-height: 24px;
+  margin-bottom:11px;
+  margin-top: 25px;
+}
+
+a.contentsselected {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom:12px;
+  padding-left: 8.5px;
+  color: #152935;
+}
+
+li.contentsselected {
+  font-weight: bold;
+  color: #5AAAFA;
+  line-height: 24px;
+  margin-bottom:13px;
+  margin-left: 37px;
+  opacity: 100%;
+}
+
+li.contents {
+  color: #8C9BA5;
+  line-height: 24px;
+  padding-bottom:12px;
+  margin-left: 30px;
+  opacity: 100%;
+}
+
+a.contents {
+  padding-left: 12px;
+  font-size: 16px;
+  color: #152935;
+  line-height: 24px;
+}
+
+#wifi {
+  margin-top: 19px;
+  margin-left: 20px;
+  font-family: MaterialIcons-Regular;
+  font-size: 18px;
+  color: #42535C;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-right: 12px;
+  float: left;
+}
+
+#internet {
+  opacity: 0.8;
+  font-weight: 200;
+  font-size: 16px;
+  color: #0F212E;
+  line-height: 24px;
+  padding-top: 19px;
+}
+
+.internetdiv {
+  opacity: 0.4;
+  background: #7CC7FF;
+  border-radius: 3px;
+  margin-top: 20px;
+  height: 72px;
+}
+
+#square {
+  margin-top: 20px;
+  /* background: rgba(0,0,0,0.36);*/
+  min-height: 629px;
+}
+
+.nextstep {
+  display: inline-flex;
+  padding-top: 41px;
+  float: right;
+  clear: both;
+}
+
+#next {
+  font-size: 16px;
+  color: #152935;
+  line-height: 24px;
+  padding-right: 4px;
+}
+
+#navigate {
+  font-weight: bold;
+  font-size: 16px;
+  color: #5596E6;
+  line-height: 24px;
+}
+
+.proposechangediv {
+  margin-top: 127px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 0 0 #E0E5E7;
+  min-height: 121px;
+  text-align: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.githubdiv {
+  display: inline-flex;
+}
+
+#git {
+  margin-right: 12px;
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+}
+
+#iffixing {
+  font-size: 16px;
+  color: #152935;
+  line-height: 24px;
+}
+
+.changesourcediv {
+  display: inline-flex;
+}
+
+#propose {
+  font-size: 14px;
+  color: #5A6872;
+}
+
+.downloadbar {
+  margin-top: 40px;
+  background: #3D70B2;
+  align-items: center;
+  justify-content: center;
+  padding-top: 72px;
+  min-height: 198px;
+  display: flex;
+  padding-bottom: 72px;
+}
+
+.contentdownload {
+  display: inline-flex;
+}
+
+#installinstruction {
+  font-weight: 100;
+  font-size: 32px;
+  color: #FFFFFF;
+  letter-spacing: 0.96px;
+  line-height: 54px;
+  margin-right: 63px;
+}
+
+.btn {
+  border-radius: 0;
+  padding: 12px 16px 16px 16px;
+  height: 44px;
+}
+
+#buttonlabel {
+  font-weight: 200;
+  font-size: 14px;
+  color: #2F5AA7;
+  letter-spacing: 0;
+  line-height: 14px;
+}
