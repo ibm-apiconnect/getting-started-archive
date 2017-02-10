@@ -30,7 +30,7 @@ redirect_from:
 {% include home-tile.html
   title="Organizing and publishing your APIs"
   icon="icon_publish.svg"
-  text="Create a microservice in the API Designer using the LoopBack Node.js framework."
+  text='Organize and version your APIs using "Products" and Catalogs. ' 
   link="Organizing"
 %}
 
